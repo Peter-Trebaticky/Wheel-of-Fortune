@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Wheel of Fortune</title>
+    </head>
+
+
+    <body>
+        <div id="latestPrize">
+            <p id="result">Latest prize:</p>
+        </div>
+        <div id="wheelOfFortune">
+            <canvas id="wheel" width="400" height="400"></canvas>
+            <div id="spin">SPIN</div>
+        </div>
+        <div id="prizeMenu">
+            <h3>Prizes</h3>
+            <ul id="prizes">
+            </ul>
+            <div class="add-prize">
+                <input type="text" id="new-prize" placeholder="New Prize">
+                <button id="add-prize">Add Prize</button>
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>

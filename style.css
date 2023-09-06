@@ -1,0 +1,142 @@
+ body{
+                width: 45%;
+                background-color: #787878;
+                margin: 0 auto;
+            }
+
+            #wheelOfFortune {
+                display: inline-flex;
+                position: relative;
+                overflow: hidden;
+                margin-top: 4%;  
+            }
+
+            #wheel {
+                display: block;
+                max-width: 100%;
+            }
+
+            #spin {
+                font: 1.5rem/0 sans-serif;
+                user-select: none;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 30%;
+                height: 30%;
+                margin: -15%;
+                background: #fff;
+                color: #fff;
+                box-shadow: 0 0 0 8px currentColor, 0 0px 15px 5px rgba(0, 0, 0, 0.6);
+                border-radius: 50%;
+                transition: 0.8s;
+            }
+
+            #spin::after {
+                content: "";
+                position: absolute;
+                top: -17px;
+                border: 10px solid transparent;
+                border-bottom-color: currentColor;
+                border-top: none;
+            }
+            #latestPrize{
+                color: aliceblue;
+                font-weight: bold;
+                font-size: 25px;
+            }
+            #prizeMenu{
+                width: 200px;
+                border-radius: 25px;
+                background-color: #565656;
+                float: right;
+            }
+            h3{
+                color:aliceblue;
+                text-decoration: underline;
+                text-transform: uppercase;
+                font-size: 25px;
+                text-align: center;
+            }
+            li{
+            list-style-type: none;  
+            }
+            span{
+                font-size: 20px;
+                list-style-type: none;
+                display: inline-block;
+                background-color: #d9d9d9;
+                height: min-content;
+                width: 70%;
+                text-align: center;
+                border-radius: 15px;
+                font-weight: bold;
+                margin: 4px;
+
+            }
+            .removePrize{
+                margin-left: 10px;
+                font-size: 28px;
+                color: rgb(180, 36, 65);
+                font-weight: bolder;
+                text-decoration: none;
+                top: 3px;
+                position: relative;
+            }
+            .removePrize:hover {
+                cursor: pointer;
+                color: rgb(253, 0, 51);
+            }
+            .add-prize{
+                bottom: 0;
+                position: relative;
+                display: grid;
+                margin: 80px 15px 10px 15px;
+            }
+            input {
+                background-color: transparent;
+                border: none;
+                outline: none;
+                color: aliceblue;
+                border-bottom: 3px solid aliceblue;
+                height: 25px;
+                text-align: center;
+            }
+            #add-prize{
+                border-radius: 15px;
+                height: min-content;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 15px;
+                background-color: #d9d9d9;
+                margin: 10px 0;
+            }
+
+            @media screen and (max-width: 1775px){
+                body{
+                    width: 70%;
+                }
+            }
+            @media screen and (max-width: 975px){
+                #wheelOfFortune{
+                    left: 20%;
+                }
+            }
+            @media screen and (max-width: 975px){
+                body{
+                    width: 90%;
+                }
+                #prizeMenu{
+                    float: none;
+                    margin: 0 auto;
+                }
+            }
+            @media screen and (max-width: 600px){
+                #wheelOfFortune{
+                    left: 0;
+                }
+            }  
